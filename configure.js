@@ -38,13 +38,7 @@ const checkOrCreateApplication = async (url, name) => {
 		let tns = [];
 		console.log('Searching for associated phone numbers');
 		let tnsResponse = await client.PhoneNumber.list({size: 1000});
-		// let tn;
 		let numberFound = false;
-		// tns = tns.concat(tnsResponse.phoneNumbers);
-		// tn = searchForThingInList(tns, 'applicationId', app.id);
-		// if(tn) {
-		// 	numberFound = true;
-		// }
 		while (!numberFound && tnsResponse.hasNextPage){
 			tns = tns.concat(tnsResponse.phoneNumbers);
 			let tn = searchForThingInList(tns, 'applicationId', app.id);

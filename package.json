@@ -1,0 +1,38 @@
+{
+  "name": "call-transfer-status-events",
+  "version": "0.0.1",
+  "description": "just display call status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "setup": "node configure.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtolb/call-transfer-status-events.git"
+  },
+  "keywords": [
+    "bandwidth",
+    "call-tracking",
+    "call",
+    "voip",
+    "twilio",
+    "call-status",
+    "voice-api",
+    "cpaas"
+  ],
+  "author": "Dan Tolbert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtolb/call-transfer-status-events/issues"
+  },
+  "homepage": "https://github.com/dtolb/call-transfer-status-events#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "command-line-args": "^4.0.6",
+    "express": "^4.15.3",
+    "node-bandwidth": "^2.3.2",
+    "url-join": "^2.0.2"
+  }
+}

@@ -11,7 +11,7 @@ const myCreds = {
 
 const client = new bandwidth(myCreds);
 
-const applicationName = 'Call-Transfer-Status-Printer-abc';
+const applicationName = 'Call-Transfer-Status-Printer';
 
 const getUrl = () => {
     const optionDefinitions = [
